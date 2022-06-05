@@ -37,8 +37,8 @@ AFRAME.registerComponent('vrm-model', {
             this.walk = this.mixer.clipAction(walkClip).setEffectiveWeight(1.0)
             this.walk.play()
             this.vrm.scene.rotateX(-Math.PI/2)
-            // this.vrm.scene.position.z += 1
-            // this.vrm.scene.position.y += 1
+            this.vrm.scene.position.z += 1
+            this.vrm.scene.position.y += 1
           }
         } catch(error) {
           console.log(error)
